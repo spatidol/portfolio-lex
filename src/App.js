@@ -1,15 +1,15 @@
 import React from 'react';
-import {render} from 'react-dom';
 import './App.css';
 import Header from './Header';
 import Web from './Web';
 import Graphic from './Graphic';
 import About from './About';
+import Home from './Home';
 import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -76,23 +76,24 @@ class App extends React.Component {
             <div>
             <Header />
                 <div className="rotators">
-                    <Link to="/projects"><img src = {'/images/web-01.svg'} alt = 'tequila' style = {{}}
+                    <Link to="/"><img src = {'/images/web-01.svg'} alt = 'tequila' style = {{}}
                         className = {`rotate one ${this.state.bounce}`}
                         onMouseEnter={this.bounce.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                     <Link to="/graphics"><img src = {'/images/web-04.svg'} alt = 'backpack' style = {{}}
+                     <Link to="/projects"><img src = {'/images/web-04.svg'} alt = 'backpack' style = {{}}
                         className = {`rotate two ${this.state.swing}`}
                         onMouseEnter={this.swing.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                     <Link to="/about"><img src = {'/images/web-03.svg'} alt = 'avo' style = {{}}
+                     <Link to="/graphics"><img src = {'/images/web-03.svg'} alt = 'avo' style = {{}}
                         className = {`rotate three ${this.state.tada}`}
                         onMouseEnter={this.tada.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                    <img src = {'/images/web-02.svg'} alt = 'pizza' style = {{}}
+                    <Link to="/about"><img src = {'/images/web-02.svg'} alt = 'pizza' style = {{}}
                         className = {`rotate four ${this.state.shake}`}
                         onMouseEnter={this.shake.bind(this)}
-                        onMouseLeave={this.removeBounce.bind(this)}></img>
+                        onMouseLeave={this.removeBounce.bind(this)}></img></Link>
                 </div>
+            <Route exact path="/" component={Home}/>
             <Route path="/projects" component={Web}/>
             <Route path="/graphics" component={Graphic}/>
             <Route path="/about" component={About}/>

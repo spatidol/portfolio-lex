@@ -6,7 +6,7 @@ array.reverse()
 
 const Graphic = () => (
  <div className='graphic'>
-  {array.map((pic, idx) => <div key={idx} className ='square'><img src={`images/prints/${pic}`}></img></div>)}
+  {array.map((pic, idx) => <div key={idx} className ='square'><img alt='graphic' src={`images/prints/${pic}`}></img></div>)}
  </div>
 );
 

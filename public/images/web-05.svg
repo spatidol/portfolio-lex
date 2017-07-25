@@ -56,6 +56,17 @@
 	.st50{opacity:0.71;fill:#FFFFFF;}
 	.st51{opacity:0.91;fill:#FFFFFF;}
 	.st52{opacity:0.31;fill:#FFFFFF;}
+	.st53{fill:#EADED3;}
+	.st54{fill:#F37A7A;}
+	.st55{fill:#C0D5DD;}
+	.st56{fill:#BDDBCF;}
+	.st57{fill:#59AB8F;}
+	.st58{fill:#F7D1B1;}
+	.st59{fill:#D8B295;}
+	.st60{fill:#F4CBD8;}
+	.st61{fill:none;stroke:#7ABCB2;stroke-width:47;stroke-miterlimit:10;}
+	.st62{fill:#7ABCB2;}
+	.st63{fill:#F6E6EC;}
 </style>
 <g>
 	<polygon class="st42" points="1371.5,357.8 1371.5,85.6 1099.3,85.6 	"/>
