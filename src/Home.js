@@ -9,134 +9,101 @@ class Home extends React.Component {
   };
 
   render() {
+    const dragHandlers = {
+      position: null,
+      onStart: this.handleStart,
+      onDrag: this.handleDrag,
+      onStop: this.handleStop
+    };
     return (
       <div className='home'>
       <Draggable
         defaultPosition={{x: 50, y: 0}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle">hello</div>
         </div>
       </Draggable>
         <Draggable
         defaultPosition={{x: 100, y: 200}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle">there</div>
         </div>
       </Draggable>
         <Draggable
         defaultPosition={{x: 1100, y: 80}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle large">avocaduh ! </div>
         </div>
       </Draggable>
         <Draggable
         defaultPosition={{x: 570, y: -10}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle">pizza</div>
         </div>
       </Draggable>
         <Draggable
         defaultPosition={{x: 400, y: -40}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle">take</div>
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 510, y: -60}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle small"> a</div>
         </div>
       </Draggable>
          <Draggable
         defaultPosition={{x: 670, y: -100}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle small">my</div>
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 740, y: -135}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle small">&lt;3</div>
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 900, y: -300}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
-        <div>
-          <img src='/images/web-06.svg' className="pic"></img>
+        {...dragHandlers}>
+        <div className="pic-ice">
+
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 200, y: -400}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
-        <div>
-          <img src='/images/web-07.svg' className="pic"></img>
+        {...dragHandlers}>
+        <div className="pic-cactus">
+
         </div>
       </Draggable>
       <Draggable
-        defaultPosition={{x: 740, y: -400}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
-        <div>
-         <img src='/images/web-08.svg' className="pic pic-large"></img>
+        defaultPosition={{x: 740, y: -350}}
+        {...dragHandlers}>
+        <div className="pic-sun pic-large">
+
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 1115, y: -700}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle"> drag</div>
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 1110, y: -690}}
-        position={null}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}>
+        {...dragHandlers}>
         <div>
           <div className="handle small"> us</div>
         </div>

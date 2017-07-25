@@ -260,6 +260,9 @@ a:hover {
   overflow: hidden;
 }
 
+.react-draggable {
+  width: 100px;
+}
 
 .handle {
   width: 60px;
@@ -271,8 +274,23 @@ a:hover {
 
 }
 
-.pic {
+.pic-ice {
   width: 110px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-image: url(/images/web-06.svg);
+}
+.pic-cactus {
+  width: 110px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-image: url(/images/web-07.svg);
+}
+.pic-sun {
+  width: 110px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url(/images/web-08.svg);
 }
 
 .pic-large {
