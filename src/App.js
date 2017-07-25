@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 import './App.css';
-import Header from './Header'
-import Web from './Web'
+import Header from './Header';
+import Web from './Web';
+import Graphic from './Graphic';
 
 class App extends React.Component {
   constructor(props) {
@@ -84,7 +85,8 @@ class App extends React.Component {
                     onMouseEnter={this.shake.bind(this)}
                     onMouseLeave={this.removeBounce.bind(this)}></img>
             </div>
-        <Web />
+
+        <Graphic />
         </div>
     )
   }

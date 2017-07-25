@@ -185,3 +185,30 @@ b {
   font-size: 20px;
   color: #717577;
 }
+
+
+
+/*SQUARE GRAPHICS CSSS*/
+.graphic {
+  top: 19vw;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.square {
+  height: 130px;
+  width: 200px;
+  /*float: left;*/
+  background-color: white;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.square img {
+  width: 200px;
+
+}
