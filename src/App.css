@@ -306,3 +306,84 @@ a:hover {
 .small {
   width: 30px;
 }
+
+
+
+/*MEDIA QUERIES AND STUFF*/
+
+
+@media only screen and (max-width : 768px) {
+  .rotators {
+    height: 25vw;
+  }
+
+  .rotate {
+    width: 35vw;
+  }
+
+  .one {
+    left: 2vw;
+  }
+  .two {
+    left: 22vw;
+  }
+  .three {
+    left: 42vw;
+  }
+  .four {
+    left: 62vw;
+  }
+
+  .fullname {
+    top: 20vw;
+  }
+
+  .web {
+    padding-top: 120px;
+  }
+
+  .float-left {
+    width: 96% !important;
+    margin-left: 0px !important;
+    margin-top: 20px;
+    padding: 0px;
+    padding-left: 4%;
+  }
+
+  .as-block, .br-block {
+    width: 98vw;
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  .br {
+    padding-bottom: 15px;
+  }
+  /*.desc-as {
+    border-bottom: 3px solid white;
+    border-bottom-left-radius: 70px;
+  }*/
+
+  .as , .brunch {
+    width: 90vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .line {
+    height: 68vw;
+  }
+
+  .desc-as::before {
+  content: " ";
+  background-image: none;
+  position: absolute;
+  left: 5%;
+  top: 95% !important;
+  height: 1px;
+  width: 90%;  /* or 100px */
+  border-bottom:3px solid white;
+
+  }
+}
