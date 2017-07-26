@@ -77,21 +77,18 @@ class Home extends React.Component {
         defaultPosition={{x: 900, y: -300}}
         {...dragHandlers}>
         <div className="pic-ice">
-
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 200, y: -400}}
         {...dragHandlers}>
         <div className="pic-cactus">
-
         </div>
       </Draggable>
       <Draggable
         defaultPosition={{x: 740, y: -350}}
         {...dragHandlers}>
         <div className="pic-sun pic-large">
-
         </div>
       </Draggable>
       <Draggable
@@ -106,6 +103,25 @@ class Home extends React.Component {
         {...dragHandlers}>
         <div>
           <div className="handle small"> us</div>
+        </div>
+      </Draggable>
+      <Draggable
+        defaultPosition={{x: 310, y: -490}}
+        {...dragHandlers}>
+        <div>
+          <div className="handle small"> :-)</div>
+        </div>
+      </Draggable>
+      <Draggable
+        defaultPosition={{x: 470, y: -470}}
+        {...dragHandlers}>
+        <div className="pic-taco">
+        </div>
+      </Draggable>
+      <Draggable
+        defaultPosition={{x: 140, y: -600}}
+        {...dragHandlers}>
+        <div className="pic-taco2">
         </div>
       </Draggable>
       </div>

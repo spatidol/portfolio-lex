@@ -260,6 +260,7 @@ a:hover {
   background-color: #FEF3F0;
   padding-top: 100px;
   overflow: hidden;
+
 }
 
 .react-draggable {
@@ -307,7 +308,21 @@ a:hover {
   width: 30px;
 }
 
+.pic-taco {
+  width: 170px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-image: url(/images/web-09.svg);
+  display: none;
+}
 
+.pic-taco2 {
+  width: 170px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-image: url(/images/web-09.svg);
+  display: none;
+}
 
 /*MEDIA QUERIES AND STUFF*/
 
@@ -316,30 +331,32 @@ a:hover {
   .rotators {
     height: 25vw;
   }
-
   .rotate {
     width: 35vw;
   }
-
   .one {
-    left: 2vw;
+    left: 0vw;
   }
   .two {
-    left: 22vw;
+    left: 21vw;
   }
   .three {
-    left: 42vw;
+    left: 43vw;
   }
   .four {
-    left: 62vw;
+    left: 64vw;
   }
 
   .fullname {
     top: 20vw;
   }
 
-  .web {
+  .web, .about, .home, .graphic {
     padding-top: 120px;
+  }
+
+  .home {
+    height: 70vh;
   }
 
   .float-left {
@@ -351,24 +368,29 @@ a:hover {
   }
 
   .as-block, .br-block {
-    width: 98vw;
+    width: auto;
     margin: 0 !important;
     padding: 0;
   }
 
   .br {
     padding-bottom: 15px;
+    height: 155px;
   }
-  /*.desc-as {
-    border-bottom: 3px solid white;
-    border-bottom-left-radius: 70px;
-  }*/
+  .desc-as {
+    height: 150px
+  }
 
-  .as , .brunch {
+  .as, .brunch {
     width: 90vw;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
+  }
+
+  img.brunch {
+    position: relative;
+    z-index: 1000 !important;
   }
 
   .line {
@@ -385,5 +407,51 @@ a:hover {
   width: 90%;  /* or 100px */
   border-bottom:3px solid white;
 
+  }
+
+  .pic-taco {
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width : 480px) {
+  .rotators {
+    height: 31vw;
+    margin-top: 0px;
+  }
+
+  .rotate {
+    width: 39vw;
+  }
+
+  .one {
+    left: -6vw;
+  }
+  .two {
+    left: 17vw;
+  }
+  .three {
+    left: 42vw;
+  }
+  .four {
+    left: 65vw;
+  }
+
+  .fullname {
+    top: 26vw;
+  }
+  .web, .about, .home, .graphic {
+    padding-top: 140px;
+  }
+  .br {
+    height: 190px;
+  }
+  .desc-as {
+    height: 170px
+  }
+
+  .pic-taco2 {
+    display: block;
   }
 }
