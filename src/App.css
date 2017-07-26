@@ -444,6 +444,10 @@ a:hover {
   .web, .about, .home, .graphic {
     padding-top: 140px;
   }
+  .about {
+    padding-top: 130px;
+    height: 70vh;
+  }
   .br {
     height: 190px;
   }
