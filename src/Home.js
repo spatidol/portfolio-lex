@@ -32,7 +32,7 @@ class Home extends React.Component {
         </div>
       </Draggable>
         <Draggable
-        defaultPosition={{x: 1100, y: 80}}
+        defaultPosition={{x: 1200, y: 80}}
         {...dragHandlers}>
         <div>
           <div className="handle large">avocaduh ! </div>
