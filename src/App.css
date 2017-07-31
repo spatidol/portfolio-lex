@@ -390,7 +390,7 @@ a:hover {
 
   img.brunch {
     position: relative;
-    z-index: 1000 !important;
+    z-index: 700 !important;
   }
 
   .line {
