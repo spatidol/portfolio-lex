@@ -76,19 +76,19 @@ class App extends React.Component {
             <div>
             <Header />
                 <div className="rotators">
-                    <Link to="/"><img src = {'/images/web-01.svg'} alt = 'tequila' style = {{}}
+                    <Link to="/"><img src = {'http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777324/web-01_b4ni5g.svg'} alt = 'tequila' style = {{}}
                         className = {`rotate one ${this.state.bounce}`}
                         onMouseEnter={this.bounce.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                     <Link to="/projects"><img src = {'/images/web-04.svg'} alt = 'backpack' style = {{}}
+                     <Link to="/projects"><img src = {'http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777325/web-04_smfzk3.svg'} alt = 'backpack' style = {{}}
                         className = {`rotate two ${this.state.swing}`}
                         onMouseEnter={this.swing.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                     <Link to="/graphics"><img src = {'/images/web-03.svg'} alt = 'avo' style = {{}}
+                     <Link to="/graphics"><img src = {'http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777325/web-03_sktvws.svg'} alt = 'avo' style = {{}}
                         className = {`rotate three ${this.state.tada}`}
                         onMouseEnter={this.tada.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
-                    <Link to="/about"><img src = {'/images/web-02.svg'} alt = 'pizza' style = {{}}
+                    <Link to="/about"><img src = {'http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777324/web-02_yzgqqe.svg'} alt = 'pizza' style = {{}}
                         className = {`rotate four ${this.state.shake}`}
                         onMouseEnter={this.shake.bind(this)}
                         onMouseLeave={this.removeBounce.bind(this)}></img></Link>
