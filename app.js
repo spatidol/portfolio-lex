@@ -17,8 +17,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.set('view engine', 'html');
-
 app.use('/magnets', magnets);
 
 // catch 404 and forward to error handler
