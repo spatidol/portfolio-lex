@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #FEF3F0;
+
+}
+
 .App {
   text-align: center;
 }
@@ -282,22 +292,26 @@ a:hover {
   height: 150px;
   background-repeat: no-repeat;
   background-image: url(/images/web-06.svg);
+  color: transparent;
 }
 .pic-cactus {
   width: 110px;
   height: 150px;
   background-repeat: no-repeat;
   background-image: url(/images/web-07.svg);
+  color: transparent;
 }
 .pic-sun {
   width: 110px;
   height: 100px;
   background-repeat: no-repeat;
   background-image: url(/images/web-08.svg);
+  color: transparent;
 }
 
 .pic-large {
   width: 210px;
+  color: transparent;
 }
 
 .large {
@@ -314,6 +328,7 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url(/images/web-09.svg);
   display: none;
+  color: transparent;
 }
 
 .pic-taco2 {
@@ -322,9 +337,38 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url(/images/web-09.svg);
   display: none;
+  color: transparent;
 }
 
-/*MEDIA QUERIES AND STUFF*/
+.magnet-form {
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  color: pink;
+  font-family: 'Khula', sans-serif;
+}
+
+.magnet-form input {
+  border-style: none;
+  height: 22px;
+  margin: 5px;
+  margin-left: 10px;
+}
+
+input[type="submit" i] {
+  background-color: #FFDC64;
+  height: 24px;
+  border: none;
+  color: white;
+  margin: 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*~~~~~~~~~~~~~~~~MEDIA QUERIES AND STUFF~~~~~~~~~~~~~~~~~*/
 
 
 @media only screen and (max-width : 768px) {

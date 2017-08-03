@@ -29,10 +29,10 @@ class App extends React.Component {
   }
 
   handleScroll(event) {
-
     // let scrollTop = event.srcElement.body.scrollTop,
     //     itemTranslate = Math.round(scrollTop/3 - 60);
     // console.log(scrollTop)
+
   }
 
   bounce() {
@@ -100,7 +100,6 @@ class App extends React.Component {
 
             </div>
 
-
         </Router>
     )
   }
@@ -109,6 +108,8 @@ class App extends React.Component {
 // -ms-transform: rotate(10deg); /* IE 9 */
 //     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
 //     transform: rotate(10deg);
+
+
 
 
 
