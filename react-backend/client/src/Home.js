@@ -56,16 +56,15 @@ class Home extends React.Component {
     return (
       <div className='home'>
         {this.state.magnets.map((magnet, idx) =>
-          <Draggable defaultPosition={{x: magnet.positionX, y: magnet.positionY}} {...dragHandlers} onStop={this.grabPos}>
-
-          <div className={magnet.class} id={Object.keys(magnet)[0]} style={{position: 'absolute'}}>{magnet[idx.toString()]}</div></Draggable>
+          <Draggable defaultPosition={{x: magnet.positionX, y: magnet.positionY}} {...dragHandlers} bounds='.home' onStop={this.grabPos}>
+          <div className={magnet.class} id={Object.keys(magnet)[0]} style={{position: 'absolute'}}>{magnet[idx.toString()]}</div>
+          </Draggable>
         )}
         <form className='magnet-form' onSubmit={this.addMagnet.bind(this)}>
           <label>
-            add a magnet!
-            <input type="text" value={this.state.value} onChange={this.onChange.bind(this)}/>
+            <input type="text" value={this.state.value} maxLength="14" onChange={this.onChange.bind(this)}/>
           </label>
-          <input type="submit" value="add" />
+          <input type="submit" value="add a magnet !" />
         </form>
       </div>
     );

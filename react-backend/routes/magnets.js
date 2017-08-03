@@ -58,8 +58,8 @@ router.post('/add', function(req, res, next) {
     console.log("KEY", key)
     obj.push({              //add new element
       [key]: text,
-      positionX: 238,
-      positionY: 90,
+      positionX: 100,
+      positionY: 250,
       class: "handle"
     });
     json = JSON.stringify(obj); //convert it back to json

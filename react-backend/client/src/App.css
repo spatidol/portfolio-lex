@@ -266,10 +266,10 @@ a:hover {
   margin-top: -15px;
   position: absolute;
   width: 100%;
-  height: 50.5%;
+  height: 65vh;
   background-color: #FEF3F0;
-  padding-top: 100px;
-  overflow: hidden;
+/*  padding-top: 100px;
+*/  overflow: hidden;
 
 }
 
@@ -278,13 +278,15 @@ a:hover {
 }
 
 .handle {
-  width: 60px;
-  height: 30px;
+  width: auto;
+  height: 27px;
   background-color: white;
   box-shadow: 3px 2px 5px;
   margin: 0px;
-  padding: 4px 0px 0px 10px;
-
+  padding: 6px 14px 0px 10px;
+  font-family: "Times New Roman", Georgia, Serif;
+  letter-spacing: .9px;
+  font-size: 17px;
 }
 
 .pic-ice {
@@ -314,14 +316,6 @@ a:hover {
   color: transparent;
 }
 
-.large {
-  width: 100px;
-}
-
-.small {
-  width: 30px;
-}
-
 .pic-taco {
   width: 170px;
   height: 170px;
@@ -343,30 +337,42 @@ a:hover {
 .magnet-form {
   height: 50px;
   position: fixed;
-  bottom: 10px;
-  right: 40px;
+  bottom: 15px;
+  right: 42px;
   color: pink;
   font-family: 'Khula', sans-serif;
 }
 
 .magnet-form input {
   border-style: none;
-  height: 22px;
+  height: 27px;
   margin: 5px;
   margin-left: 10px;
+  padding-left: 10px;
+  width: 150px;
 }
 
 input[type="submit" i] {
   background-color: #FFDC64;
-  height: 24px;
+  height: 27px;
   border: none;
   color: white;
   margin: 0px;
+  font-size: 13px;
+  padding: 0 10px;
+  line-height: 0px;
+  width: 115px;
+  padding-bottom: 1px;
 }
 
 input:focus {
   outline: none;
 }
+
+input[type="submit" i]:active {
+  background-color: #F9E3A2;
+}
+
 
 /*~~~~~~~~~~~~~~~~MEDIA QUERIES AND STUFF~~~~~~~~~~~~~~~~~*/
 
@@ -395,8 +401,11 @@ input:focus {
     top: 20vw;
   }
 
-  .web, .about, .home, .graphic {
+  .web, .about, .graphic {
     padding-top: 120px;
+  }
+  .home {
+    padding-top: 50px;
   }
 
   .home {
@@ -485,9 +494,13 @@ input:focus {
   .fullname {
     top: 26vw;
   }
-  .web, .about, .home, .graphic {
+  .web, .about, .graphic {
     padding-top: 140px;
   }
+  .home {
+    padding-top: 70px;
+  }
+
   .about {
     padding-top: 130px;
     height: 70vh;
