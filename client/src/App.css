@@ -287,7 +287,7 @@ a:hover {
   font-family: "Times New Roman", Georgia, Serif;
   letter-spacing: .9px;
   font-size: 17px;
-  cursor: move;
+  cursor: default;
 }
 
 .handle-original {
@@ -300,7 +300,7 @@ a:hover {
   font-family: "Times New Roman", Georgia, Serif;
   letter-spacing: .9px;
   font-size: 17px;
-  cursor: move;
+  cursor: default;
 }
 
 .pic-ice {

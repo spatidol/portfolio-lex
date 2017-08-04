@@ -75,21 +75,22 @@ router.post('/add', function(req, res, next) {
 router.post('/delete', function(req, res, next) {
   var id = req.query.delete;
   fs.readFile('magnets.json', 'utf8', function readFileCallback(err, data){
-    if (err){
+    if (err) {
         console.log(err);
     } else {
-    obj = JSON.parse(data); //now it an object (array)
-    obj.forEach((singleObj, idx) => {
-      if(singleObj[id]) {
-        obj.splice(idx, 1);
-        return;
-      }
-    })
-    json = JSON.stringify(obj); //convert it back to json
-    fs.writeFile('magnets.json', json, 'utf8', function() {
-      res.json({success: true})
-    }); // write it back
-  }});
+      obj = JSON.parse(data); //now it an object (array)
+      obj.forEach((singleObj, idx) => {
+        if(singleObj[id]) {
+          obj.splice(idx, 1);
+          return;
+        }
+      })
+      json = JSON.stringify(obj); //convert it back to json
+      fs.writeFile('magnets.json', json, 'utf8', function() {
+        res.json(obj);
+      }); // write it back
+    }
+  });
 
 })
 

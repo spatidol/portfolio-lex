@@ -1,6 +1,7 @@
 import React from 'react';
 import Draggable from 'react-draggable';
 import axios from 'axios';
+import uuid from 'uuid/v4'
 
 class Home extends React.Component {
   constructor(props) {
@@ -25,7 +26,11 @@ class Home extends React.Component {
     console.log("HEREEE?", position)
     axios.post(`/magnets?x=${position.x}&y=${position.y}&key=${e.target.id}`)
     .then(resp => console.log(resp))
-    // .then(() => this.handleStop())
+    .then(resp => {
+      fetch('/magnets')
+      .then(res => res.json())
+      .then(magnets => this.setState({ magnets }));
+    })
   }
 
   addMagnet(e) {
@@ -55,7 +60,10 @@ class Home extends React.Component {
     .then(() => {
       fetch('/magnets')
       .then(res => res.json())
-      .then(magnets => this.setState({ magnets }));
+      .then(magnets => {
+        console.log("heellooooo there", magnets)
+        this.setState({ magnets })
+      });
     })
     .catch(err => console.log(err))
   }
@@ -70,9 +78,9 @@ class Home extends React.Component {
     return (
       <div className='home'>
         {this.state.magnets.map((magnet, idx) =>
-          <Draggable defaultPosition={{x: magnet.positionX, y: magnet.positionY}} {...dragHandlers} bounds='.home' onStop={this.grabPos}>
+          <Draggable key={uuid()} defaultPosition={{x: magnet.positionX, y: magnet.positionY}} {...dragHandlers} bounds='.home' onStop={this.grabPos.bind(this)}>
             <div className={magnet.class} id={Object.keys(magnet)[0]} style={{position: 'absolute'}}>{magnet[Object.keys(magnet)[0]]}
-            <a className='close' onClick={() => this.delete(Object.keys(magnet)[0])}>x</a>
+              <a className='close' onClick={() => this.delete(Object.keys(magnet)[0])}>x</a>
             </div>
           </Draggable>
         )}
