@@ -287,6 +287,20 @@ a:hover {
   font-family: "Times New Roman", Georgia, Serif;
   letter-spacing: .9px;
   font-size: 17px;
+  cursor: move;
+}
+
+.handle-original {
+  width: auto;
+  height: 27px;
+  background-color: white;
+  box-shadow: 3px 2px 5px;
+  margin: 0px;
+  padding: 6px 14px 0px 10px;
+  font-family: "Times New Roman", Georgia, Serif;
+  letter-spacing: .9px;
+  font-size: 17px;
+  cursor: move;
 }
 
 .pic-ice {
@@ -372,6 +386,22 @@ input:focus {
 input[type="submit" i]:active {
   background-color: #F9E3A2;
 }
+
+a.close {
+  position: absolute;
+  top: -3px;
+  right: 2px;
+  font-family: 'Khula', sans-serif;
+  font-size: 13px;
+  color: hotpink;
+  display: none;
+}
+
+.handle:hover a.close {
+  display: inline;
+  cursor: pointer;
+}
+
 
 
 /*~~~~~~~~~~~~~~~~MEDIA QUERIES AND STUFF~~~~~~~~~~~~~~~~~*/

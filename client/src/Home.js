@@ -40,10 +40,24 @@ class Home extends React.Component {
     })
   }
 
-  onChange(e){
+  onChange(e) {
     this.setState({
       value: e.target.value
     })
+  }
+
+  delete(id) {
+    console.log("on delete", id)
+    axios.post(`/magnets/delete?delete=${id}`)
+    .then(resp => {
+      console.log(resp)
+    })
+    .then(() => {
+      fetch('/magnets')
+      .then(res => res.json())
+      .then(magnets => this.setState({ magnets }));
+    })
+    .catch(err => console.log(err))
   }
 
   render() {
@@ -57,7 +71,9 @@ class Home extends React.Component {
       <div className='home'>
         {this.state.magnets.map((magnet, idx) =>
           <Draggable defaultPosition={{x: magnet.positionX, y: magnet.positionY}} {...dragHandlers} bounds='.home' onStop={this.grabPos}>
-          <div className={magnet.class} id={Object.keys(magnet)[0]} style={{position: 'absolute'}}>{magnet[idx.toString()]}</div>
+            <div className={magnet.class} id={Object.keys(magnet)[0]} style={{position: 'absolute'}}>{magnet[Object.keys(magnet)[0]]}
+            <a className='close' onClick={() => this.delete(Object.keys(magnet)[0])}>x</a>
+            </div>
           </Draggable>
         )}
         <form className='magnet-form' onSubmit={this.addMagnet.bind(this)}>
