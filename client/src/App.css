@@ -332,7 +332,7 @@ a:hover {
 
 .pic-taco {
   width: 170px;
-  height: 170px;
+  height: 90px;
   background-repeat: no-repeat;
   background-image: url(http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777328/web-09_f4k7uu.svg);
   display: none;
@@ -341,7 +341,7 @@ a:hover {
 
 .pic-taco2 {
   width: 170px;
-  height: 170px;
+  height: 90px;
   background-repeat: no-repeat;
   background-image: url(http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777328/web-09_f4k7uu.svg);
   display: none;
@@ -529,6 +529,7 @@ a.close {
   }
   .home {
     padding-top: 70px;
+    height: 80vh;
   }
 
   .about {
