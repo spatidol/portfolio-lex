@@ -7,7 +7,9 @@ body {
   background-color: #FEF3F0;
   overflow: hidden;
 }
-
+#root {
+  overflow: hidden;
+}
 .App {
   text-align: center;
 }
@@ -534,7 +536,7 @@ a.close {
     padding-top: 140px;
   }
   .home {
-    height: 20vh;
+    height: auto;
     padding-top: 70px;
     bottom: 0;
   }
