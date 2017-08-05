@@ -387,6 +387,11 @@ input[type="submit" i]:active {
   background-color: #F9E3A2;
 }
 
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 a.close {
   position: absolute;
   top: -3px;
