@@ -534,7 +534,7 @@ a.close {
     padding-top: 140px;
   }
   .home {
-    height: auto;
+    height: 20vh;
     padding-top: 70px;
     bottom: 0;
   }
