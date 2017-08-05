@@ -73,7 +73,7 @@ class App extends React.Component {
   render() {
     return (
         <Router>
-            <div>
+            <div id='overflow'>
             <Header />
                 <div className="rotators">
                     <Link to="/"><img src = {'http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777324/web-01_b4ni5g.svg'} alt = 'tequila' style = {{}}

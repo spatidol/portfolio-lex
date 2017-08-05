@@ -439,7 +439,8 @@ a.close {
   }
 
   .home {
-    height: 70vh;
+    height: auto;
+    bottom: 0;
   }
 
   .float-left {
@@ -528,8 +529,9 @@ a.close {
     padding-top: 140px;
   }
   .home {
+    height: auto;
     padding-top: 70px;
-    height: 60vh;
+    bottom: 0;
   }
 
   .about {
