@@ -440,6 +440,9 @@ a.close {
   .web, .about, .graphic {
     padding-top: 120px;
   }
+  .about {
+    height: 100vh;
+  }
   .home {
     padding-top: 50px;
   }
@@ -447,6 +450,7 @@ a.close {
   .home {
     height: auto;
     bottom: 0;
+    position: fixed;
   }
 
   .float-left {
@@ -538,11 +542,12 @@ a.close {
     height: auto;
     padding-top: 70px;
     bottom: 0;
+    position: fixed;
   }
 
   .about {
     padding-top: 130px;
-    height: 70vh;
+    height: 100vh;
   }
   .br {
     height: 190px;
