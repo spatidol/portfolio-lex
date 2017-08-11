@@ -11,7 +11,6 @@ import {
   Link
 } from 'react-router-dom';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -36,38 +35,36 @@ class App extends React.Component {
   }
 
   bounce() {
-    console.log("bounce")
-      this.setState({
-          bounce: 'animated bounce'
+    this.setState({
+      bounce: 'animated bounce'
 
-      });
+    });
   }
   swing() {
-      this.setState({
-          swing: 'animated swing'
+    this.setState({
+        swing: 'animated swing'
 
-      });
+    });
   }
   tada() {
-      this.setState({
-          tada: 'animated tada'
+    this.setState({
+        tada: 'animated tada'
 
-      });
+    });
   }
   shake() {
-      this.setState({
-          shake: 'animated shake'
+    this.setState({
+        shake: 'animated shake'
 
-      });
+    });
   }
   removeBounce() {
-    console.log("unbounced")
-      this.setState({
-          bounce: '',
-          swing: '',
-          tada: '',
-          shake: ''
-      });
+    this.setState({
+        bounce: '',
+        swing: '',
+        tada: '',
+        shake: ''
+    });
   }
 
   render() {
@@ -99,7 +96,6 @@ class App extends React.Component {
             <Route path="/about" component={About}/>
 
             </div>
-
         </Router>
     )
   }
@@ -108,9 +104,5 @@ class App extends React.Component {
 // -ms-transform: rotate(10deg); /* IE 9 */
 //     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
 //     transform: rotate(10deg);
-
-
-
-
 
 export default App;
