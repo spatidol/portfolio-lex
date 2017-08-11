@@ -221,8 +221,10 @@ b {
   position: absolute;
   width: 100%;
   padding-top: 100px;
-  height: 52.3vh;
   background-color:  #D8EEEB; /*#BDE5DF;*/
+  outline: 7px dotted #D8EEEB;
+  padding-bottom: 7px;
+  outline-offset: 15px;
 
 }
 
@@ -440,9 +442,7 @@ a.close {
   .web, .about, .graphic {
     padding-top: 120px;
   }
-  .about {
-    height: 100vh;
-  }
+
   .home {
     padding-top: 50px;
   }
@@ -547,7 +547,6 @@ a.close {
 
   .about {
     padding-top: 130px;
-    height: 100vh;
   }
   .br {
     height: 190px;
