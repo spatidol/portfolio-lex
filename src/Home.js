@@ -82,9 +82,9 @@ class Home extends React.Component {
         )}
         <form className='magnet-form' onSubmit={this.addMagnet.bind(this)}>
           <label>
-            <input type="text" value={this.state.value} maxLength="14" onChange={this.onChange.bind(this)} />
+            <input type="text" placeholder='create your own..' alue={this.state.value} maxLength="14" onChange={this.onChange.bind(this)} />
           </label>
-          <input type="submit" value="add a magnet !" />
+          <input type="submit" value="ADD MAGNET!" />
         </form>
       </div>
     );

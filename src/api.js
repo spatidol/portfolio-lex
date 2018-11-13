@@ -25,6 +25,13 @@ function moveMagnet(magnetKey, positionX, positionY){
 
 function deleteMagnet(magnetKey){
   magnets.child(magnetKey).remove()
+// magnets.orderByChild('title')
+//     .once('value').then(function(snapshot) {
+//         snapshot.forEach(function(childSnapshot) {
+//         //remove each child
+//            magnets.child(childSnapshot.key).remove();
+//     });
+// });
 }
 
 

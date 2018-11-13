@@ -1,12 +1,48 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Hubble from './Hubble';
+import Lyft from './Lyft';
+import Ba from './Ba';
 
 
 const Web = () => (
- <div className='web'>
-   <div className='as-block'><a href='http://artschool-usa.com/' target="_blank"><img src="http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777325/artsc_dyyenr.png" alt='artschool' className='as'></img></a></div>
-   <div className='description float-left desc-as'><b>artschool</b> <br /> design // development <br /> a lifestyle brand & clothing line created by an art student <br /> html | css | javascript </div>
-   <div className='description float-left br'><b>brunch</b> <br /> design // development <br /> for your basic brunch fix <br /> application that returns all brunch spots given a location search<br /> javascript | react | express | google api | html | css</div>
-   <div className='br-block'><div className='line'></div><a href='https://brunchfix.herokuapp.com/' target="_blank"><img src="http://res.cloudinary.com/dmwi5lxjc/image/upload/v1501777325/brunch_wtbkok.png" alt='brunch' className='brunch'></img></a></div>
+  <div className='web'>
+    <div className='project-row'>
+     <Link to='/hubble' component={Hubble}>
+      <div className='project-img'>
+        <img src='../img/hubble-cover.png' />
+      </div>
+      <div className='project-desc'>
+        <h1>landing page optimization : hubble contacts</h1>
+        <h2>Improving direct response flows & ecouraging engagement with interactive content.</h2>
+        <p>see more ></p>
+      </div>
+     </Link>
+    </div>
+    <div className='project-row'>
+     <Link to='/ba' component={Ba}>
+      <div className='project-img white'>
+        <img src='../img/ba-cover.png' />
+      </div>
+      <div className='project-desc'>
+        <h1>landing page optimization : blue apron</h1>
+        <h2>Optimizing plan selection & landing page iterations.</h2>
+        <p>see more ></p>
+      </div>
+     </Link>
+    </div>
+    <div className='project-row'>
+     <Link to='/lyft' component={Lyft}>
+      <div className='project-img'>
+        <img className='lyft' src='../img/lyft-cover.png' />
+      </div>
+      <div className='project-desc'>
+        <h1>building city selection : lyft</h1>
+        <h2>A search feature that guided the user to major markets.</h2>
+        <p>see more ></p>
+      </div>
+     </Link>
+    </div>
  </div>
 );
 

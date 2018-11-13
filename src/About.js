@@ -4,14 +4,15 @@ import React from 'react';
 const About = () => (
  <div className='about'>
   <div className='info'>
-    <h2>alexa spatidol</h2>
-    <h1>web developer <span className='red'> // </span> graphic designer</h1>
-    <h3><a href='https://www.linkedin.com/in/alexa-spatidol/' target="_blank"> stalk me on linkedIn.</a></h3>
-    <h3><a href='https://www.instagram.com/lexaspat/' target="_blank"> follow me on insta.</a></h3>
-    <h3><a href='mailto:spatidol@gmail.com?Subject=hi%20lex'> send me mail.</a></h3>
-    <h3><a href='https://github.com/spatidol' target="_blank"> github.</a></h3>
-
+    <h2>alexa spatidol</h2><br />
+    <h1>ui / ux designer</h1>
+    <p>Passionate about data driven design. With a background in development & coding. I love building fun things and learning new skills! <br /><span>~ succulent obsessed ~</span></p>
+    <a href='https://www.linkedin.com/in/alexa-spatidol/' target="_blank"> linkedIn</a> //
+    <a href='https://www.instagram.com/lexaspat/' target="_blank"> instagram</a> //
+    <a href='mailto:spatidol@gmail.com?Subject=hi%20lex'> email</a> //
+    <a href='https://github.com/spatidol' target="_blank"> github</a>
   </div>
+  <div className='gif'><img src='../img/aloe.gif' /></div>
  </div>
 );
 

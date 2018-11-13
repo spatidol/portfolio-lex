@@ -16,7 +16,8 @@
     "react-rotation": "^1.1.0",
     "react-router-dom": "^4.1.2",
     "react-scroll-components": "^0.2.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "react-thumbnail-gallery": "^2.0.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
