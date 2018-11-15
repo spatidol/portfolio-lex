@@ -1,18 +1,33 @@
 {
-  "name": "react-backend",
-  "version": "0.0.0",
+  "name": "fun",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-  },
   "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "animate.css": "^3.5.2",
+    "axios": "^0.16.2",
+    "classnames": "^2.2.5",
+    "firebase": "^4.2.0",
+    "material-ui": "^0.18.3",
+    "object-assign": "^4.1.1",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-draggable": "^2.2.6",
+    "react-images": "^0.5.4",
+    "react-player": "^1.6.6",
+    "react-responsive-carousel": "^3.1.43",
+    "react-rotation": "^1.1.0",
+    "react-router-dom": "^4.1.2",
+    "react-scroll-components": "^0.2.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "react-thumbnail-gallery": "^2.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
