@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
 import Web from './Web';
 import Graphic from './Graphic';
 import About from './About';

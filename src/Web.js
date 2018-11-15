@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Hubble from './Hubble';
-import Lyft from './Lyft';
-import Ba from './Ba';
 
 
 const Web = () => (
   <div className='web'>
     <div className='project-row'>
-     <Link to='/hubble' component={Hubble}>
+     <Link to='/hubble'>
       <div className='project-img'>
-        <img src='../img/hubble-cover.png' />
+        <img alt='hubble' src='../img/hubble-cover.png' />
       </div>
       <div className='project-desc'>
         <h1>landing page optimization : hubble contacts</h1>
@@ -20,9 +17,9 @@ const Web = () => (
      </Link>
     </div>
     <div className='project-row'>
-     <Link to='/ba' component={Ba}>
+     <Link to='/ba'>
       <div className='project-img white'>
-        <img src='../img/ba-cover.png' />
+        <img alt='ba' src='../img/ba-cover.png' />
       </div>
       <div className='project-desc'>
         <h1>landing page optimization : blue apron</h1>
@@ -32,9 +29,9 @@ const Web = () => (
      </Link>
     </div>
     <div className='project-row'>
-     <Link to='/lyft' component={Lyft}>
+     <Link to='/lyft'>
       <div className='project-img'>
-        <img className='lyft' src='../img/lyft-cover.png' />
+        <img alt='lyft' className='lyft' src='../img/lyft-cover.png' />
       </div>
       <div className='project-desc'>
         <h1>building city selection : lyft</h1>

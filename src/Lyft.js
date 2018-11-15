@@ -1,8 +1,6 @@
 import React from 'react';
 import Player from './Player';
 import { Link } from 'react-router-dom';
-import Hubble from './Hubble';
-import Ba from './Ba';
 
 const Lyft = () => (
   <div className='lyft'>
@@ -10,9 +8,9 @@ const Lyft = () => (
     <div className='content'>
       <div className='container'>
       	<div className='nav'>
-          <Link to='/hubble' component={Hubble}> hubble </Link> //
-          <Link to='/ba' component={Ba}> blue apron </Link> // 
-          <Link to='/lyft' component={Lyft} className='selected'> lyft </Link>
+          <Link to='/hubble'> hubble </Link> //
+          <Link to='/ba'> blue apron </Link> // 
+          <Link to='/lyft' className='selected'> lyft </Link>
         </div>
         <h1>Lyft : Why drive lyft</h1>
         <p><span>Business problem : </span>The need to sign up more drivers in so-called 'major markets'</p>

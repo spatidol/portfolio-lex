@@ -1,17 +1,15 @@
 import React from 'react';
 import { HubCarousel, HubbCarousel } from './Carousel';
 import { Link } from 'react-router-dom';
-import Lyft from './Lyft';
-import Ba from './Ba';
 
 const Hubble = () => (
   <div className='hubble'>
     <div className='content'>
       <div className='container'>
         <div className='nav'>
-          <Link to='/hubble' component={Hubble} className='selected'> hubble </Link> //
-          <Link to='/ba' component={Ba}> blue apron </Link> // 
-          <Link to='/lyft' component={Lyft}> lyft </Link>
+          <Link to='/hubble' className='selected'> hubble </Link> //
+          <Link to='/ba'> blue apron </Link> // 
+          <Link to='/lyft'> lyft </Link>
         </div>
         <h1>Hubble Contacts</h1>
         <p>Various landing page redesign and optimization for Hubble. Specific examples include improvements to direct response and checkout flows. Constantly iterating + hypothesizing based on data from users' interaction with the pages.</p>

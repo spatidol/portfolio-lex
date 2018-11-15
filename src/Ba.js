@@ -1,8 +1,6 @@
 import React from 'react';
 import { BaCarousel } from './Carousel';
 import { Link } from 'react-router-dom';
-import Lyft from './Lyft';
-import Hubble from './Hubble';
 
 const Ba = () => (
   <div className='ba'>
@@ -10,9 +8,9 @@ const Ba = () => (
     <div className='content'>
       <div className='container'>
       	<div className='nav'>
-          <Link to='/hubble' component={Hubble}> hubble </Link> //
-          <Link to='/ba' component={Ba} className='selected'> blue apron </Link> // 
-          <Link to='/lyft' component={Lyft}> lyft </Link>
+          <Link to='/hubble'> hubble </Link> //
+          <Link to='/ba' className='selected'> blue apron </Link> // 
+          <Link to='/lyft'> lyft </Link>
         </div>
         <h1>Blue Apron</h1>
         <p>Some examples from landing page redesign and optimized direct response flows for partner Blue Apron. <br/>How do you remove the <span>friction from plan selection</span> with a meal kit? How do you highlight certain meals without increasing drop-off? Do you show the <span>full menu before signup?</span> These were some of the questions we asked while designing for Blue Apron.</p>

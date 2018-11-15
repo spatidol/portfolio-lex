@@ -1,6 +1,5 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-import axios from 'axios';
 import uuid from 'uuid/v4';
 import firebase from './firebase';
 import api from './api';
@@ -82,7 +81,7 @@ class Home extends React.Component {
         )}
         <form className='magnet-form' onSubmit={this.addMagnet.bind(this)}>
           <label>
-            <input type="text" placeholder='create your own..' alue={this.state.value} maxLength="14" onChange={this.onChange.bind(this)} />
+            <input type="text" placeholder='create your own..' value={this.state.value} maxLength="14" onChange={this.onChange.bind(this)} />
           </label>
           <input type="submit" value="ADD MAGNET!" />
         </form>

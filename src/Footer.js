@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
-import Web from './Web';
-import Graphic from './Graphic';
-import About from './About';
-import Home from './Home';
 import {
   HashRouter as Router,
-  Route,
   NavLink
 } from 'react-router-dom';
 
