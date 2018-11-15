@@ -328,6 +328,10 @@ body {
 
 }
 
+.hub-carousel .control-dots {
+  display: none;
+}
+
 .mobile-image .carousel .control-dots .dot {
   box-shadow: none;
   background-color: #fff;
@@ -370,6 +374,12 @@ body {
   }
   .player div {
     width: 100% !important;
+  }
+  /*.slider.animated {
+        transform: translate3d(-100%, 0px, 0px) !important;
+  }*/
+  .hub-carousel .control-dots {
+    display: block;
   }
 }
 
