@@ -6,7 +6,7 @@ const About = () => (
   <div className='info'>
     <h2>alexa spatidol</h2><br />
     <h1>ui / ux designer</h1>
-    <p>Passionate about data driven design. With a background in development & coding. I love building fun things and learning new skills! <br /><span>~ succulent obsessed ~</span></p>
+    <p>Passionate about data driven design with a background in development & coding. I love learning new skills and building fun things! <br /><span>~ succulent obsessed ~</span></p>
     <a href='https://www.linkedin.com/in/alexa-spatidol/' target="_blank"> linkedIn</a> //
     <a href='https://www.instagram.com/lexaspat/' target="_blank"> instagram</a> //
     <a href='mailto:spatidol@gmail.com?Subject=hi%20lex'> email</a> //

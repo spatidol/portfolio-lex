@@ -14,7 +14,7 @@ const Web = () => (
       </div>
       <div className='project-desc'>
         <h1>landing page optimization : hubble contacts</h1>
-        <h2>Improving direct response flows & ecouraging engagement with interactive content.</h2>
+        <h2>Improving direct response flows & encouraging engagement with interactive content.</h2>
         <p>see more ></p>
       </div>
      </Link>
