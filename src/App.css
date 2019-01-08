@@ -73,6 +73,10 @@ body {
   text-decoration: none;
 }
 
+.project-row a {
+  cursor: pointer;
+}
+
 .project-img {
   background-color: #D1DCE4;
   width: 70%;
