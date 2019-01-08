@@ -5,40 +5,34 @@ import { Link } from 'react-router-dom';
 const Web = () => (
   <div className='web'>
     <div className='project-row'>
-     <Link to='/hubble'>
-      <div className='project-img'>
+      <Link className='project-img' to='/hubble'>
         <img alt='hubble' src='../img/hubble-cover.png' />
-      </div>
+      </Link>
       <div className='project-desc'>
-        <h1>landing page optimization : hubble contacts</h1>
+        <Link to='/hubble'><h1>landing page optimization : hubble contacts</h1></Link>
         <h2>Improving direct response flows & encouraging engagement with interactive content.</h2>
-        <p>see more ></p>
+        <Link to='/hubble'><p>see more ></p></Link>
       </div>
-     </Link>
     </div>
     <div className='project-row'>
-     <Link to='/ba'>
-      <div className='project-img white'>
+      <Link className='project-img white' to='/ba'>
         <img alt='ba' src='../img/ba-cover.png' />
-      </div>
+      </Link>
       <div className='project-desc'>
-        <h1>landing page optimization : blue apron</h1>
+        <Link to='/ba'><h1>landing page optimization : blue apron</h1></Link>
         <h2>Optimizing plan selection & landing page iterations.</h2>
-        <p>see more ></p>
+        <Link to='/ba'><p>see more ></p></Link>
       </div>
-     </Link>
     </div>
     <div className='project-row'>
-     <Link to='/lyft'>
-      <div className='project-img'>
+      <Link className='project-img' to='/lyft'>
         <img alt='lyft' className='lyft' src='../img/lyft-cover.png' />
-      </div>
+      </Link>
       <div className='project-desc'>
-        <h1>building city selection : lyft</h1>
+        <Link to='/lyft'><h1>building city selection : lyft</h1></Link>
         <h2>A search feature that guided the user to major markets.</h2>
-        <p>see more ></p>
+        <Link to='/lyft'><p>see more ></p></Link>
       </div>
-     </Link>
     </div>
  </div>
 );
